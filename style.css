@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+/* FONTS */
+@font-face {
+    font-family: "Pacifico-Regular";
+  
+    src: url("assets/fonts/Pacifico-Regular.otf") format("opentype"), /* Open Type Font */
+      url("assets/fonts/Pacifico-Regular.ttf") format("truetype"), /* Safari, Android, iOS */
+      url("assets/fonts/Pacifico-Regular.woff") format("woff"), /* Modern Browsers */
+      url("assets/fonts/Pacifico-Regular.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'Open-Sans';
+    src: url(assets\fonts\Open_Sans\OpenSans-Regular.ttf);
+}
+* {
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    margin: 0;
+}
+html {
+    padding: 0;
+}
+body {
+    background: #E2E2E2;
+}
+nav {
+    width: 100%;
+    padding: 0 5%;
+    background: #1c0f13;
+}
+nav > div.row1 {
+    width: 100%;
+    padding: 1% 0 0 0;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+nav > div.row1 > div.logo {
+    width: 30%;
+    font-family: 'Pacifico';
+    font-size: 40px;
+    color:  #B7CECE;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+nav > div.row1 > div.logo > span.circle {
+    background:  #B7CECE;
+    color: #1c0f13;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav > div.row1 > div.nav-links {
+    width: 55%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+nav > div.row1 > div.mob-ico > svg.icon {
+    display: none;
+    fill: #4A5559;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    transition: .7s;
+} 
+nav > div.row1 > div.mob-ico > svg.icon:hover {
+    fill:#E2E2E2;
+}
+nav > div.row1 > div.mob-ico > svg.icon#ham {
+    display: block;
+}
+nav > div.row2 {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+}
+nav > div.row2 > div.nav-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+nav > div.row2 > div.nav-links > a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #6E7E85;
+    font-family: 'Open Sans';
+    margin: 2%;
+}
+nav > div.row2 > div.nav-links > a:hover {
+    color: #B7CECE;
+}
+@media (min-width: 769px) {
+    nav > div.row1 > div.nav-links {
+        width: 55%;
+        display: flex; 
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 2%;
+    }
+    nav > div.row1 > div.nav-links > a {
+        text-decoration: none;
+        font-size: 18px;
+        color: #6E7E85;
+        font-family: 'Open Sans';
+    }
+    nav > div.row1 > div.nav-links > a:hover {
+        color: #B7CECE;
+    }
+    nav > div.row1 > div.mob-ico {
+        display: none;
+    }
+    nav > div.row2 {
+        display: none;
+    }
+}
